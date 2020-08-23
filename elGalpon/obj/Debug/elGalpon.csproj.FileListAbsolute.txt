@@ -1,0 +1,11 @@
+E:\universidad\PAV\Práctico\El Galpon\elGalpon\elGalpon\obj\Debug\elGalpon.csprojAssemblyReference.cache
+E:\universidad\PAV\Práctico\El Galpon\elGalpon\elGalpon\obj\Debug\elGalpon.FrmPrincipal.resources
+E:\universidad\PAV\Práctico\El Galpon\elGalpon\elGalpon\obj\Debug\elGalpon.Properties.Resources.resources
+E:\universidad\PAV\Práctico\El Galpon\elGalpon\elGalpon\obj\Debug\elGalpon.csproj.GenerateResource.cache
+E:\universidad\PAV\Práctico\El Galpon\elGalpon\elGalpon\obj\Debug\elGalpon.csproj.CoreCompileInputs.cache
+E:\universidad\PAV\Práctico\El Galpon\elGalpon\elGalpon\bin\Debug\elGalpon.exe.config
+E:\universidad\PAV\Práctico\El Galpon\elGalpon\elGalpon\bin\Debug\elGalpon.exe
+E:\universidad\PAV\Práctico\El Galpon\elGalpon\elGalpon\bin\Debug\elGalpon.pdb
+E:\universidad\PAV\Práctico\El Galpon\elGalpon\elGalpon\obj\Debug\elGalpon.exe
+E:\universidad\PAV\Práctico\El Galpon\elGalpon\elGalpon\obj\Debug\elGalpon.pdb
+E:\universidad\PAV\Práctico\El Galpon\elGalpon\elGalpon\obj\Debug\elGalpon.frmMesas.resources
