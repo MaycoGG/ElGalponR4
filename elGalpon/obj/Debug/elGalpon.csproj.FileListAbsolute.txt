@@ -9,3 +9,14 @@ E:\universidad\PAV\Práctico\El Galpon\elGalpon\elGalpon\bin\Debug\elGalpon.pdb
 E:\universidad\PAV\Práctico\El Galpon\elGalpon\elGalpon\obj\Debug\elGalpon.exe
 E:\universidad\PAV\Práctico\El Galpon\elGalpon\elGalpon\obj\Debug\elGalpon.pdb
 E:\universidad\PAV\Práctico\El Galpon\elGalpon\elGalpon\obj\Debug\elGalpon.frmMesas.resources
+C:\Empresa\ElGalpon-R4\elGalpon\bin\Debug\elGalpon.exe.config
+C:\Empresa\ElGalpon-R4\elGalpon\bin\Debug\elGalpon.exe
+C:\Empresa\ElGalpon-R4\elGalpon\bin\Debug\elGalpon.pdb
+C:\Empresa\ElGalpon-R4\elGalpon\obj\Debug\elGalpon.csprojAssemblyReference.cache
+C:\Empresa\ElGalpon-R4\elGalpon\obj\Debug\elGalpon.FrmPrincipal.resources
+C:\Empresa\ElGalpon-R4\elGalpon\obj\Debug\elGalpon.frmMesas.resources
+C:\Empresa\ElGalpon-R4\elGalpon\obj\Debug\elGalpon.Properties.Resources.resources
+C:\Empresa\ElGalpon-R4\elGalpon\obj\Debug\elGalpon.csproj.GenerateResource.cache
+C:\Empresa\ElGalpon-R4\elGalpon\obj\Debug\elGalpon.csproj.CoreCompileInputs.cache
+C:\Empresa\ElGalpon-R4\elGalpon\obj\Debug\elGalpon.exe
+C:\Empresa\ElGalpon-R4\elGalpon\obj\Debug\elGalpon.pdb

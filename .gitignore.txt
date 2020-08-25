@@ -34,5 +34,6 @@ elGalpon/obj/Debug/elGalpon.csproj.GenerateResource.cache
 elGalpon/obj/Debug/elGalpon.csprojAssemblyReference.cache
 elGalpon/obj/Debug/elGalpon.exe
 elGalpon/obj/Debug/elGalpon.pdb
+elGalpon/obj/Debug/*
 .vs/
 .vs/elGalpon/*

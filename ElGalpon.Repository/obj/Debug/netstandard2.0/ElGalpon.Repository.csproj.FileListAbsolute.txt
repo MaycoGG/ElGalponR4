@@ -1,0 +1,5 @@
+C:\Empresa\ElGalpon-R4\ElGalpon.Repository\bin\Debug\netstandard2.0\ElGalpon.Repository.deps.json
+C:\Empresa\ElGalpon-R4\ElGalpon.Repository\bin\Debug\netstandard2.0\ElGalpon.Repository.dll
+C:\Empresa\ElGalpon-R4\ElGalpon.Repository\obj\Debug\netstandard2.0\ElGalpon.Repository.csprojAssemblyReference.cache
+C:\Empresa\ElGalpon-R4\ElGalpon.Repository\obj\Debug\netstandard2.0\ElGalpon.Repository.AssemblyInfoInputs.cache
+C:\Empresa\ElGalpon-R4\ElGalpon.Repository\obj\Debug\netstandard2.0\ElGalpon.Repository.AssemblyInfo.cs
