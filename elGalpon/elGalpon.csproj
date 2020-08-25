@@ -199,5 +199,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ElGalpon.Base\ElGalpon.Base.csproj">
+      <Project>{2694f6a2-430b-4922-b696-d7497239ba94}</Project>
+      <Name>ElGalpon.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ElGalpon.Business\ElGalpon.Business.csproj">
+      <Project>{ea2274c4-4419-41ec-b509-8f7affe5a8a8}</Project>
+      <Name>ElGalpon.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

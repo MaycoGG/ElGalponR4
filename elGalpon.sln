@@ -12,6 +12,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElGalpon.Models", "ElGalpon.Models\ElGalpon.Models.csproj", "{601E3B58-F0E6-44EC-A2C1-35CCF3785C7B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElGalpon.Repository", "ElGalpon.Repository\ElGalpon.Repository.csproj", "{C2119436-384D-4D38-A00E-8020BC2ED164}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2694F6A2-430B-4922-B696-D7497239BA94} = {2694F6A2-430B-4922-B696-D7497239BA94}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E56089BD-0CD6-4F35-9AF0-D83CAED6CAD5}"
 EndProject
