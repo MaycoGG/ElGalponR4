@@ -17,7 +17,6 @@ namespace ElGalpon.Business
         public ResultModel<UserModel> Login(string user, string pass)
         {
             var response = new ResultModel<UserModel>();
-
             try
             {
                 var result = userRepository.LoginUser(user, pass);
@@ -27,8 +26,6 @@ namespace ElGalpon.Business
                 {
                     response.AddErrorMessage("El usuario o la contraseña son incorrectos.");
                 }
-
-
             }
             catch (Exception ex)
             {

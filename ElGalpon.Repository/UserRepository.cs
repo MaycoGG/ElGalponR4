@@ -38,7 +38,7 @@ namespace ElGalpon.Repository
 
         public UserModel LoginUser(string user, string pass)
         {
-            UserModel usuario = null;
+            UserModel usuario = new UserModel();
             using (var connection = GetConnection())
             {
                 connection.Open();
