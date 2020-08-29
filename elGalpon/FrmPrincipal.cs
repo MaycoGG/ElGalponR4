@@ -125,6 +125,22 @@ namespace elGalpon
             AbrirFormulario<frmMesas>();
         }
 
+        private void horaFecha_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToLongTimeString();
+            lblFecha.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void btnReservas(object sender, EventArgs e)
+        {
+            AbrirFormulario<frmReservas>();
+        }
+
+        private void btnRerservas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<frmReservas>();
+        }
+
         private void panelTitulo_Paint(object sender, PaintEventArgs e)
         {
             

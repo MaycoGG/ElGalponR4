@@ -28,26 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.PanelContenedor = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelFormularios = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnPersonal = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.btnConfiguracion = new System.Windows.Forms.Button();
+            this.btnEgresos = new System.Windows.Forms.Button();
+            this.btnPedidos = new System.Windows.Forms.Button();
+            this.btnCaja = new System.Windows.Forms.Button();
             this.btnMesas = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelTitulo = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnMaximizar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnRestaurar = new System.Windows.Forms.Button();
+            this.horaFecha = new System.Windows.Forms.Timer(this.components);
+            this.btnRerservas = new System.Windows.Forms.Button();
             this.PanelContenedor.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelMenu.SuspendLayout();
@@ -92,13 +95,13 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(52)))), ((int)(((byte)(53)))));
-            this.panelMenu.Controls.Add(this.button1);
-            this.panelMenu.Controls.Add(this.button11);
-            this.panelMenu.Controls.Add(this.button12);
-            this.panelMenu.Controls.Add(this.button10);
-            this.panelMenu.Controls.Add(this.button9);
-            this.panelMenu.Controls.Add(this.button8);
-            this.panelMenu.Controls.Add(this.button7);
+            this.panelMenu.Controls.Add(this.btnRerservas);
+            this.panelMenu.Controls.Add(this.btnPersonal);
+            this.panelMenu.Controls.Add(this.btnMenu);
+            this.panelMenu.Controls.Add(this.btnConfiguracion);
+            this.panelMenu.Controls.Add(this.btnEgresos);
+            this.panelMenu.Controls.Add(this.btnPedidos);
+            this.panelMenu.Controls.Add(this.btnCaja);
             this.panelMenu.Controls.Add(this.btnMesas);
             this.panelMenu.Controls.Add(this.panel4);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -107,96 +110,83 @@
             this.panelMenu.Size = new System.Drawing.Size(200, 515);
             this.panelMenu.TabIndex = 1;
             // 
-            // button1
+            // btnPersonal
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(0, 304);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 35);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Personal";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
+            this.btnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPersonal.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
+            this.btnPersonal.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnPersonal.Location = new System.Drawing.Point(0, 304);
+            this.btnPersonal.Name = "btnPersonal";
+            this.btnPersonal.Size = new System.Drawing.Size(200, 35);
+            this.btnPersonal.TabIndex = 7;
+            this.btnPersonal.Text = "Personal";
+            this.btnPersonal.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // btnMenu
             // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button11.ForeColor = System.Drawing.SystemColors.Control;
-            this.button11.Location = new System.Drawing.Point(0, 263);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(200, 35);
-            this.button11.TabIndex = 7;
-            this.button11.Text = "Menu";
-            this.button11.UseVisualStyleBackColor = false;
+            this.btnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
+            this.btnMenu.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnMenu.Location = new System.Drawing.Point(0, 263);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(200, 35);
+            this.btnMenu.TabIndex = 7;
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // btnConfiguracion
             // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button12.ForeColor = System.Drawing.SystemColors.Control;
-            this.button12.Location = new System.Drawing.Point(0, 427);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(200, 35);
-            this.button12.TabIndex = 4;
-            this.button12.Text = "Configuración";
-            this.button12.UseVisualStyleBackColor = false;
+            this.btnConfiguracion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
+            this.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfiguracion.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
+            this.btnConfiguracion.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnConfiguracion.Location = new System.Drawing.Point(0, 427);
+            this.btnConfiguracion.Name = "btnConfiguracion";
+            this.btnConfiguracion.Size = new System.Drawing.Size(200, 35);
+            this.btnConfiguracion.TabIndex = 4;
+            this.btnConfiguracion.Text = "Configuración";
+            this.btnConfiguracion.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // btnEgresos
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button10.ForeColor = System.Drawing.SystemColors.Control;
-            this.button10.Location = new System.Drawing.Point(0, 345);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(200, 35);
-            this.button10.TabIndex = 5;
-            this.button10.Text = "Egresos";
-            this.button10.UseVisualStyleBackColor = false;
+            this.btnEgresos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
+            this.btnEgresos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEgresos.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
+            this.btnEgresos.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnEgresos.Location = new System.Drawing.Point(0, 345);
+            this.btnEgresos.Name = "btnEgresos";
+            this.btnEgresos.Size = new System.Drawing.Size(200, 35);
+            this.btnEgresos.TabIndex = 5;
+            this.btnEgresos.Text = "Egresos";
+            this.btnEgresos.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // btnPedidos
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button9.ForeColor = System.Drawing.SystemColors.Control;
-            this.button9.Location = new System.Drawing.Point(0, 386);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(200, 35);
-            this.button9.TabIndex = 4;
-            this.button9.Text = "Pedidos";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnPedidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
+            this.btnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPedidos.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
+            this.btnPedidos.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnPedidos.Location = new System.Drawing.Point(0, 386);
+            this.btnPedidos.Name = "btnPedidos";
+            this.btnPedidos.Size = new System.Drawing.Size(200, 35);
+            this.btnPedidos.TabIndex = 4;
+            this.btnPedidos.Text = "Pedidos";
+            this.btnPedidos.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btnCaja
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button8.ForeColor = System.Drawing.SystemColors.Control;
-            this.button8.Location = new System.Drawing.Point(0, 222);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(200, 35);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Reservas";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button7.ForeColor = System.Drawing.SystemColors.Control;
-            this.button7.Location = new System.Drawing.Point(0, 140);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(200, 35);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Caja";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnCaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
+            this.btnCaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCaja.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
+            this.btnCaja.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCaja.Location = new System.Drawing.Point(0, 140);
+            this.btnCaja.Name = "btnCaja";
+            this.btnCaja.Size = new System.Drawing.Size(200, 35);
+            this.btnCaja.TabIndex = 2;
+            this.btnCaja.Text = "Caja";
+            this.btnCaja.UseVisualStyleBackColor = false;
             // 
             // btnMesas
             // 
@@ -225,7 +215,8 @@
             // panelTitulo
             // 
             this.panelTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
-            this.panelTitulo.Controls.Add(this.label1);
+            this.panelTitulo.Controls.Add(this.lblHora);
+            this.panelTitulo.Controls.Add(this.lblFecha);
             this.panelTitulo.Controls.Add(this.btnMinimizar);
             this.panelTitulo.Controls.Add(this.btnMaximizar);
             this.panelTitulo.Controls.Add(this.btnCerrar);
@@ -238,18 +229,31 @@
             this.panelTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitulo_Paint);
             this.panelTitulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTitulo_MouseMove);
             // 
-            // label1
+            // lblHora
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(3, 5);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(65, 24);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "FECHA";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHora.Location = new System.Drawing.Point(3, 5);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblHora.Size = new System.Drawing.Size(57, 24);
+            this.lblHora.TabIndex = 5;
+            this.lblHora.Text = "HORA";
+            this.lblHora.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblFecha.Location = new System.Drawing.Point(77, 5);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblFecha.Size = new System.Drawing.Size(65, 24);
+            this.lblFecha.TabIndex = 4;
+            this.lblFecha.Text = "FECHA";
+            this.lblFecha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnMinimizar
             // 
@@ -307,6 +311,26 @@
             this.btnRestaurar.UseVisualStyleBackColor = false;
             this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
             // 
+            // horaFecha
+            // 
+            this.horaFecha.Enabled = true;
+            this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
+            // 
+            // btnRerservas
+            // 
+            this.btnRerservas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
+            this.btnRerservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRerservas.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
+            this.btnRerservas.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnRerservas.Location = new System.Drawing.Point(0, 222);
+            this.btnRerservas.Name = "btnRerservas";
+            this.btnRerservas.Size = new System.Drawing.Size(200, 35);
+            this.btnRerservas.TabIndex = 9;
+            this.btnRerservas.Text = "Reservas";
+            this.btnRerservas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRerservas.UseVisualStyleBackColor = false;
+            this.btnRerservas.Click += new System.EventHandler(this.btnRerservas_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,19 +361,21 @@
         private System.Windows.Forms.Panel panelTitulo;
         private System.Windows.Forms.Button btnMesas;
         private System.Windows.Forms.Panel panelFormularios;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnConfiguracion;
+        private System.Windows.Forms.Button btnEgresos;
+        private System.Windows.Forms.Button btnPedidos;
+        private System.Windows.Forms.Button btnCaja;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnRestaurar;
         private System.Windows.Forms.Button btnMaximizar;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btnPersonal;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.Label lblHora;
+        private System.Windows.Forms.Timer horaFecha;
+        private System.Windows.Forms.Button btnRerservas;
     }
 }
 
