@@ -1,0 +1,12 @@
+C:\Empresa\ElGalpon-R4\ElGalpon.Models\bin\Debug\netstandard2.0\ElGalpon.Models.deps.json
+C:\Empresa\ElGalpon-R4\ElGalpon.Models\bin\Debug\netstandard2.0\ElGalpon.Models.dll
+C:\Empresa\ElGalpon-R4\ElGalpon.Models\bin\Debug\netstandard2.0\ElGalpon.Models.pdb
+C:\Empresa\ElGalpon-R4\ElGalpon.Models\bin\Debug\netstandard2.0\ElGalpon.Base.dll
+C:\Empresa\ElGalpon-R4\ElGalpon.Models\bin\Debug\netstandard2.0\ElGalpon.Base.pdb
+C:\Empresa\ElGalpon-R4\ElGalpon.Models\obj\Debug\netstandard2.0\ElGalpon.Models.csprojAssemblyReference.cache
+C:\Empresa\ElGalpon-R4\ElGalpon.Models\obj\Debug\netstandard2.0\ElGalpon.Models.AssemblyInfoInputs.cache
+C:\Empresa\ElGalpon-R4\ElGalpon.Models\obj\Debug\netstandard2.0\ElGalpon.Models.AssemblyInfo.cs
+C:\Empresa\ElGalpon-R4\ElGalpon.Models\obj\Debug\netstandard2.0\ElGalpon.Models.csproj.CoreCompileInputs.cache
+C:\Empresa\ElGalpon-R4\ElGalpon.Models\obj\Debug\netstandard2.0\ElGalpon.Models.csproj.CopyComplete
+C:\Empresa\ElGalpon-R4\ElGalpon.Models\obj\Debug\netstandard2.0\ElGalpon.Models.dll
+C:\Empresa\ElGalpon-R4\ElGalpon.Models\obj\Debug\netstandard2.0\ElGalpon.Models.pdb

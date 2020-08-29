@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ElGalpon.Base\ElGalpon.Base.csproj" />
+    <ProjectReference Include="..\ElGalpon.Models\ElGalpon.Models.csproj" />
     <ProjectReference Include="..\ElGalpon.Repository\ElGalpon.Repository.csproj" />
   </ItemGroup>
 

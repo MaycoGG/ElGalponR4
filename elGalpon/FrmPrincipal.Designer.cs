@@ -145,6 +145,7 @@
             this.button12.TabIndex = 4;
             this.button12.Text = "Configuración";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button10
             // 

@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ElGalpon.Base\ElGalpon.Base.csproj" />
+    <ProjectReference Include="..\ElGalpon.Models\ElGalpon.Models.csproj" />
   </ItemGroup>
 
 </Project>

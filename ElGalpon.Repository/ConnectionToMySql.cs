@@ -8,7 +8,7 @@ namespace ElGalpon.Repository
         private readonly string connectionString;
         public ConnectionToMySql()
         {
-            connectionString = "Server=localhost; Database=MyCompany; User=root; port=3306; password=;";
+            connectionString = "Server=localhost; Database=elgalpon; User=mayco; port=3306; password=mayco1234;";
         }
         protected MySqlConnection GetConnection()
         {

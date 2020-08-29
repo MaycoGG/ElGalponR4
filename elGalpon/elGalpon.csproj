@@ -162,6 +162,12 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogAdmin.Designer.cs">
+      <DependentUpon>LogAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mesas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogAdmin.resx">
+      <DependentUpon>LogAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mesas.resx">
       <DependentUpon>Mesas.cs</DependentUpon>
@@ -207,6 +216,10 @@
     <ProjectReference Include="..\ElGalpon.Business\ElGalpon.Business.csproj">
       <Project>{ea2274c4-4419-41ec-b509-8f7affe5a8a8}</Project>
       <Name>ElGalpon.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ElGalpon.Models\ElGalpon.Models.csproj">
+      <Project>{601E3B58-F0E6-44EC-A2C1-35CCF3785C7B}</Project>
+      <Name>ElGalpon.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -125,6 +125,11 @@ namespace elGalpon
             AbrirFormulario<frmMesas>();
         }
 
+        private void button12_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<LogAdmin>();
+        }
+
         private void panelTitulo_Paint(object sender, PaintEventArgs e)
         {
             

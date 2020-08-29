@@ -1097,6 +1097,19 @@
         "runtime": {
           "bin/placeholder/ElGalpon.Base.dll": {}
         }
+      },
+      "ElGalpon.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "ElGalpon.Base": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ElGalpon.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ElGalpon.Models.dll": {}
+        }
       }
     }
   },
@@ -4482,11 +4495,17 @@
       "type": "project",
       "path": "../ElGalpon.Base/ElGalpon.Base.csproj",
       "msbuildProject": "../ElGalpon.Base/ElGalpon.Base.csproj"
+    },
+    "ElGalpon.Models/1.0.0": {
+      "type": "project",
+      "path": "../ElGalpon.Models/ElGalpon.Models.csproj",
+      "msbuildProject": "../ElGalpon.Models/ElGalpon.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "ElGalpon.Base >= 1.0.0",
+      "ElGalpon.Models >= 1.0.0",
       "MySql.Data >= 8.0.21",
       "NETStandard.Library >= 2.0.3"
     ]
@@ -4519,6 +4538,9 @@
           "projectReferences": {
             "C:\\Empresa\\ElGalpon-R4\\ElGalpon.Base\\ElGalpon.Base.csproj": {
               "projectPath": "C:\\Empresa\\ElGalpon-R4\\ElGalpon.Base\\ElGalpon.Base.csproj"
+            },
+            "C:\\Empresa\\ElGalpon-R4\\ElGalpon.Models\\ElGalpon.Models.csproj": {
+              "projectPath": "C:\\Empresa\\ElGalpon-R4\\ElGalpon.Models\\ElGalpon.Models.csproj"
             }
           }
         }

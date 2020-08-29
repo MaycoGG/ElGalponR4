@@ -1,0 +1,8 @@
+C:\Empresa\ElGalpon-R4\ElGalpon.Base\bin\Debug\netstandard2.0\ElGalpon.Base.deps.json
+C:\Empresa\ElGalpon-R4\ElGalpon.Base\bin\Debug\netstandard2.0\ElGalpon.Base.dll
+C:\Empresa\ElGalpon-R4\ElGalpon.Base\bin\Debug\netstandard2.0\ElGalpon.Base.pdb
+C:\Empresa\ElGalpon-R4\ElGalpon.Base\obj\Debug\netstandard2.0\ElGalpon.Base.AssemblyInfoInputs.cache
+C:\Empresa\ElGalpon-R4\ElGalpon.Base\obj\Debug\netstandard2.0\ElGalpon.Base.AssemblyInfo.cs
+C:\Empresa\ElGalpon-R4\ElGalpon.Base\obj\Debug\netstandard2.0\ElGalpon.Base.csproj.CoreCompileInputs.cache
+C:\Empresa\ElGalpon-R4\ElGalpon.Base\obj\Debug\netstandard2.0\ElGalpon.Base.dll
+C:\Empresa\ElGalpon-R4\ElGalpon.Base\obj\Debug\netstandard2.0\ElGalpon.Base.pdb
