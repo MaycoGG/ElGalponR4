@@ -143,14 +143,15 @@ namespace elGalpon
         
         private void btnConfiguracion_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<LogAdmin>();
+            LogAdmin login = new LogAdmin();
+            login.Show();
         }
 
         private void panelTitulo_Paint(object sender, PaintEventArgs e)
         {
             
         }
-        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        public void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
             Form formulario;
             formulario = 
