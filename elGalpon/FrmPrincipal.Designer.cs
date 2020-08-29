@@ -34,6 +34,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelFormularios = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnRerservas = new System.Windows.Forms.Button();
             this.btnPersonal = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnConfiguracion = new System.Windows.Forms.Button();
@@ -50,7 +51,6 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnRestaurar = new System.Windows.Forms.Button();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
-            this.btnRerservas = new System.Windows.Forms.Button();
             this.PanelContenedor.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelMenu.SuspendLayout();
@@ -110,6 +110,21 @@
             this.panelMenu.Size = new System.Drawing.Size(200, 515);
             this.panelMenu.TabIndex = 1;
             // 
+            // btnRerservas
+            // 
+            this.btnRerservas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
+            this.btnRerservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRerservas.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
+            this.btnRerservas.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnRerservas.Location = new System.Drawing.Point(0, 222);
+            this.btnRerservas.Name = "btnRerservas";
+            this.btnRerservas.Size = new System.Drawing.Size(200, 35);
+            this.btnRerservas.TabIndex = 9;
+            this.btnRerservas.Text = "Reservas";
+            this.btnRerservas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRerservas.UseVisualStyleBackColor = false;
+            this.btnRerservas.Click += new System.EventHandler(this.btnRerservas_Click);
+            // 
             // btnPersonal
             // 
             this.btnPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
@@ -148,6 +163,7 @@
             this.btnConfiguracion.TabIndex = 4;
             this.btnConfiguracion.Text = "Configuración";
             this.btnConfiguracion.UseVisualStyleBackColor = false;
+            this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
             // 
             // btnEgresos
             // 
@@ -315,21 +331,6 @@
             // 
             this.horaFecha.Enabled = true;
             this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
-            // 
-            // btnRerservas
-            // 
-            this.btnRerservas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
-            this.btnRerservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRerservas.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.btnRerservas.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRerservas.Location = new System.Drawing.Point(0, 222);
-            this.btnRerservas.Name = "btnRerservas";
-            this.btnRerservas.Size = new System.Drawing.Size(200, 35);
-            this.btnRerservas.TabIndex = 9;
-            this.btnRerservas.Text = "Reservas";
-            this.btnRerservas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRerservas.UseVisualStyleBackColor = false;
-            this.btnRerservas.Click += new System.EventHandler(this.btnRerservas_Click);
             // 
             // FrmPrincipal
             // 
