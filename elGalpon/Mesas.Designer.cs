@@ -40,7 +40,6 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.button27 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
@@ -56,30 +55,8 @@
             this.button46 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button48 = new System.Windows.Forms.Button();
-            this.button47 = new System.Windows.Forms.Button();
-            this.button45 = new System.Windows.Forms.Button();
-            this.button44 = new System.Windows.Forms.Button();
-            this.button42 = new System.Windows.Forms.Button();
-            this.button41 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.panelTitulo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panelTitulo.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -88,7 +65,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(66, 53);
+            this.button1.Location = new System.Drawing.Point(61, 96);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 73);
             this.button1.TabIndex = 7;
@@ -101,7 +78,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(66, 132);
+            this.button2.Location = new System.Drawing.Point(61, 175);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(148, 73);
             this.button2.TabIndex = 8;
@@ -114,7 +91,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(66, 211);
+            this.button3.Location = new System.Drawing.Point(61, 254);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(148, 73);
             this.button3.TabIndex = 9;
@@ -127,7 +104,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
             this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Location = new System.Drawing.Point(243, 211);
+            this.button4.Location = new System.Drawing.Point(238, 254);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(148, 73);
             this.button4.TabIndex = 12;
@@ -140,7 +117,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
             this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.Location = new System.Drawing.Point(243, 132);
+            this.button5.Location = new System.Drawing.Point(238, 175);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(148, 73);
             this.button5.TabIndex = 11;
@@ -153,7 +130,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
             this.button6.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6.Location = new System.Drawing.Point(243, 53);
+            this.button6.Location = new System.Drawing.Point(238, 96);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(148, 73);
             this.button6.TabIndex = 10;
@@ -166,7 +143,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
             this.button7.ForeColor = System.Drawing.SystemColors.Control;
-            this.button7.Location = new System.Drawing.Point(417, 211);
+            this.button7.Location = new System.Drawing.Point(412, 254);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(148, 73);
             this.button7.TabIndex = 15;
@@ -179,7 +156,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
             this.button8.ForeColor = System.Drawing.SystemColors.Control;
-            this.button8.Location = new System.Drawing.Point(417, 132);
+            this.button8.Location = new System.Drawing.Point(412, 175);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(148, 73);
             this.button8.TabIndex = 14;
@@ -192,7 +169,7 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
             this.button9.ForeColor = System.Drawing.SystemColors.Control;
-            this.button9.Location = new System.Drawing.Point(417, 53);
+            this.button9.Location = new System.Drawing.Point(412, 96);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(148, 73);
             this.button9.TabIndex = 13;
@@ -205,7 +182,7 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
             this.button10.ForeColor = System.Drawing.SystemColors.Control;
-            this.button10.Location = new System.Drawing.Point(592, 211);
+            this.button10.Location = new System.Drawing.Point(587, 254);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(148, 73);
             this.button10.TabIndex = 18;
@@ -218,7 +195,7 @@
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
             this.button11.ForeColor = System.Drawing.SystemColors.Control;
-            this.button11.Location = new System.Drawing.Point(592, 132);
+            this.button11.Location = new System.Drawing.Point(587, 175);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(148, 73);
             this.button11.TabIndex = 17;
@@ -231,20 +208,12 @@
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
             this.button12.ForeColor = System.Drawing.SystemColors.Control;
-            this.button12.Location = new System.Drawing.Point(592, 53);
+            this.button12.Location = new System.Drawing.Point(587, 96);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(148, 73);
             this.button12.TabIndex = 16;
             this.button12.Text = "MesaX";
             this.button12.UseVisualStyleBackColor = false;
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.vScrollBar1.Location = new System.Drawing.Point(747, 0);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(22, 589);
-            this.vScrollBar1.TabIndex = 31;
             // 
             // button27
             // 
@@ -441,214 +410,6 @@
             this.button25.Text = "MesaX";
             this.button25.UseVisualStyleBackColor = false;
             // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.SeaGreen;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button15.ForeColor = System.Drawing.SystemColors.Control;
-            this.button15.Location = new System.Drawing.Point(66, 301);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(148, 73);
-            this.button15.TabIndex = 19;
-            this.button15.Text = "MesaX";
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button14.ForeColor = System.Drawing.SystemColors.Control;
-            this.button14.Location = new System.Drawing.Point(66, 380);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(148, 73);
-            this.button14.TabIndex = 20;
-            this.button14.Text = "MesaX";
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.LightCoral;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button13.ForeColor = System.Drawing.SystemColors.Control;
-            this.button13.Location = new System.Drawing.Point(66, 459);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(148, 73);
-            this.button13.TabIndex = 21;
-            this.button13.Text = "MesaX";
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.Color.SeaGreen;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button18.ForeColor = System.Drawing.SystemColors.Control;
-            this.button18.Location = new System.Drawing.Point(243, 301);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(148, 73);
-            this.button18.TabIndex = 22;
-            this.button18.Text = "MesaX";
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button17.ForeColor = System.Drawing.SystemColors.Control;
-            this.button17.Location = new System.Drawing.Point(243, 380);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(148, 73);
-            this.button17.TabIndex = 23;
-            this.button17.Text = "MesaX";
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.Color.LightCoral;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button16.ForeColor = System.Drawing.SystemColors.Control;
-            this.button16.Location = new System.Drawing.Point(243, 459);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(148, 73);
-            this.button16.TabIndex = 24;
-            this.button16.Text = "MesaX";
-            this.button16.UseVisualStyleBackColor = false;
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.SeaGreen;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button21.ForeColor = System.Drawing.SystemColors.Control;
-            this.button21.Location = new System.Drawing.Point(417, 301);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(148, 73);
-            this.button21.TabIndex = 25;
-            this.button21.Text = "MesaX";
-            this.button21.UseVisualStyleBackColor = false;
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button20.ForeColor = System.Drawing.SystemColors.Control;
-            this.button20.Location = new System.Drawing.Point(417, 380);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(148, 73);
-            this.button20.TabIndex = 26;
-            this.button20.Text = "MesaX";
-            this.button20.UseVisualStyleBackColor = false;
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.LightCoral;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button19.ForeColor = System.Drawing.SystemColors.Control;
-            this.button19.Location = new System.Drawing.Point(417, 459);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(148, 73);
-            this.button19.TabIndex = 27;
-            this.button19.Text = "MesaX";
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // button48
-            // 
-            this.button48.BackColor = System.Drawing.Color.SeaGreen;
-            this.button48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button48.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button48.ForeColor = System.Drawing.SystemColors.Control;
-            this.button48.Location = new System.Drawing.Point(66, 538);
-            this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(148, 73);
-            this.button48.TabIndex = 56;
-            this.button48.Text = "MesaX";
-            this.button48.UseVisualStyleBackColor = false;
-            // 
-            // button47
-            // 
-            this.button47.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button47.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button47.ForeColor = System.Drawing.SystemColors.Control;
-            this.button47.Location = new System.Drawing.Point(66, 617);
-            this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(148, 73);
-            this.button47.TabIndex = 57;
-            this.button47.Text = "MesaX";
-            this.button47.UseVisualStyleBackColor = false;
-            // 
-            // button45
-            // 
-            this.button45.BackColor = System.Drawing.Color.SeaGreen;
-            this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button45.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button45.ForeColor = System.Drawing.SystemColors.Control;
-            this.button45.Location = new System.Drawing.Point(243, 538);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(148, 73);
-            this.button45.TabIndex = 59;
-            this.button45.Text = "MesaX";
-            this.button45.UseVisualStyleBackColor = false;
-            // 
-            // button44
-            // 
-            this.button44.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button44.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button44.ForeColor = System.Drawing.SystemColors.Control;
-            this.button44.Location = new System.Drawing.Point(243, 617);
-            this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(148, 73);
-            this.button44.TabIndex = 60;
-            this.button44.Text = "MesaX";
-            this.button44.UseVisualStyleBackColor = false;
-            // 
-            // button42
-            // 
-            this.button42.BackColor = System.Drawing.Color.SeaGreen;
-            this.button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button42.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button42.ForeColor = System.Drawing.SystemColors.Control;
-            this.button42.Location = new System.Drawing.Point(417, 538);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(148, 73);
-            this.button42.TabIndex = 62;
-            this.button42.Text = "MesaX";
-            this.button42.UseVisualStyleBackColor = false;
-            // 
-            // button41
-            // 
-            this.button41.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button41.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button41.ForeColor = System.Drawing.SystemColors.Control;
-            this.button41.Location = new System.Drawing.Point(417, 617);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(148, 73);
-            this.button41.TabIndex = 63;
-            this.button41.Text = "MesaX";
-            this.button41.UseVisualStyleBackColor = false;
-            // 
-            // button38
-            // 
-            this.button38.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button38.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button38.ForeColor = System.Drawing.SystemColors.Control;
-            this.button38.Location = new System.Drawing.Point(592, 617);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(148, 73);
-            this.button38.TabIndex = 66;
-            this.button38.Text = "MesaX";
-            this.button38.UseVisualStyleBackColor = false;
-            // 
             // button37
             // 
             this.button37.BackColor = System.Drawing.Color.LightCoral;
@@ -662,79 +423,20 @@
             this.button37.Text = "MesaX";
             this.button37.UseVisualStyleBackColor = false;
             // 
-            // button39
-            // 
-            this.button39.BackColor = System.Drawing.Color.SeaGreen;
-            this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button39.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button39.ForeColor = System.Drawing.SystemColors.Control;
-            this.button39.Location = new System.Drawing.Point(592, 538);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(148, 73);
-            this.button39.TabIndex = 65;
-            this.button39.Text = "MesaX";
-            this.button39.UseVisualStyleBackColor = false;
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.Color.LightCoral;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button22.ForeColor = System.Drawing.SystemColors.Control;
-            this.button22.Location = new System.Drawing.Point(592, 459);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(148, 73);
-            this.button22.TabIndex = 30;
-            this.button22.Text = "MesaX";
-            this.button22.UseVisualStyleBackColor = false;
-            // 
-            // button23
-            // 
-            this.button23.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button23.ForeColor = System.Drawing.SystemColors.Control;
-            this.button23.Location = new System.Drawing.Point(592, 380);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(148, 73);
-            this.button23.TabIndex = 29;
-            this.button23.Text = "MesaX";
-            this.button23.UseVisualStyleBackColor = false;
-            // 
-            // button24
-            // 
-            this.button24.BackColor = System.Drawing.Color.SeaGreen;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button24.ForeColor = System.Drawing.SystemColors.Control;
-            this.button24.Location = new System.Drawing.Point(592, 301);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(148, 73);
-            this.button24.TabIndex = 28;
-            this.button24.Text = "MesaX";
-            this.button24.UseVisualStyleBackColor = false;
-            // 
-            // panelTitulo
-            // 
-            this.panelTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
-            this.panelTitulo.Controls.Add(this.label1);
-            this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitulo.Location = new System.Drawing.Point(0, 0);
-            this.panelTitulo.Name = "panelTitulo";
-            this.panelTitulo.Size = new System.Drawing.Size(747, 47);
-            this.panelTitulo.TabIndex = 80;
-            // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(52)))), ((int)(((byte)(53)))));
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Sitka Subheading", 18.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(355, 9);
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(67, 24);
-            this.label1.TabIndex = 4;
+            this.label1.Size = new System.Drawing.Size(774, 76);
+            this.label1.TabIndex = 80;
             this.label1.Text = "MESAS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -742,8 +444,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(769, 589);
-            this.Controls.Add(this.panelTitulo);
+            this.ClientSize = new System.Drawing.Size(774, 527);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button25);
             this.Controls.Add(this.button26);
             this.Controls.Add(this.button27);
@@ -757,30 +459,9 @@
             this.Controls.Add(this.button35);
             this.Controls.Add(this.button36);
             this.Controls.Add(this.button37);
-            this.Controls.Add(this.button38);
-            this.Controls.Add(this.button39);
             this.Controls.Add(this.button40);
-            this.Controls.Add(this.button41);
-            this.Controls.Add(this.button42);
             this.Controls.Add(this.button43);
-            this.Controls.Add(this.button44);
-            this.Controls.Add(this.button45);
             this.Controls.Add(this.button46);
-            this.Controls.Add(this.button47);
-            this.Controls.Add(this.button48);
-            this.Controls.Add(this.vScrollBar1);
-            this.Controls.Add(this.button22);
-            this.Controls.Add(this.button23);
-            this.Controls.Add(this.button24);
-            this.Controls.Add(this.button19);
-            this.Controls.Add(this.button20);
-            this.Controls.Add(this.button21);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.button18);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button15);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button12);
@@ -796,8 +477,6 @@
             this.Name = "frmMesas";
             this.Text = "Mesas";
             this.Load += new System.EventHandler(this.frmMesas_Load);
-            this.panelTitulo.ResumeLayout(false);
-            this.panelTitulo.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -816,7 +495,6 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button29;
@@ -832,28 +510,7 @@
         private System.Windows.Forms.Button button46;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button48;
-        private System.Windows.Forms.Button button47;
-        private System.Windows.Forms.Button button45;
-        private System.Windows.Forms.Button button44;
-        private System.Windows.Forms.Button button42;
-        private System.Windows.Forms.Button button41;
-        private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Panel panelTitulo;
         private System.Windows.Forms.Label label1;
     }
 }

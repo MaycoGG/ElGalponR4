@@ -147,6 +147,11 @@ namespace elGalpon
             login.Show();
         }
 
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<Pedidos>();
+        }
+
         private void panelTitulo_Paint(object sender, PaintEventArgs e)
         {
             
