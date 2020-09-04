@@ -122,7 +122,7 @@ namespace elGalpon
 
         private void btnMesas_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<frmMesas>();
+            AbrirFormulario<frmMenuMesas>();
         }
 
         private void horaFecha_Tick(object sender, EventArgs e)
@@ -149,23 +149,35 @@ namespace elGalpon
 
         private void btnPedidos_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<Pedidos>();
+            AbrirFormulario<frmPedidos>();
         }
 
         private void btnCaja_Click(object sender, EventArgs e)
         {
-            LogAdmin login = new LogAdmin();
-            login.ShowDialog();
-            
+            //LogAdmin login = new LogAdmin();
+            //login.ShowDialog();
+            AbrirFormulario<frmCaja>();
 
         }
-        
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<frmMenu>();
+        }
+
+        private void btnPersonal_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<frmPersonal>();
+        }
 
         private void panelTitulo_Paint(object sender, PaintEventArgs e)
         {
             
         }
-        public void AbrirFormulario<MiForm>() where MiForm : Form, new()
+
+        
+
+        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
             Form formulario;
             formulario =

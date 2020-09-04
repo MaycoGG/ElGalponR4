@@ -67,7 +67,7 @@
             this.PanelContenedor.Location = new System.Drawing.Point(0, 0);
             this.PanelContenedor.MinimumSize = new System.Drawing.Size(65, 65);
             this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(962, 549);
+            this.PanelContenedor.Size = new System.Drawing.Size(1024, 549);
             this.PanelContenedor.TabIndex = 0;
             // 
             // panel3
@@ -77,7 +77,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(200, 34);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(762, 515);
+            this.panel3.Size = new System.Drawing.Size(824, 515);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -89,7 +89,7 @@
             this.panelFormularios.Location = new System.Drawing.Point(0, 0);
             this.panelFormularios.MinimumSize = new System.Drawing.Size(762, 431);
             this.panelFormularios.Name = "panelFormularios";
-            this.panelFormularios.Size = new System.Drawing.Size(762, 515);
+            this.panelFormularios.Size = new System.Drawing.Size(824, 515);
             this.panelFormularios.TabIndex = 1;
             // 
             // panelMenu
@@ -137,6 +137,7 @@
             this.btnPersonal.TabIndex = 7;
             this.btnPersonal.Text = "Personal";
             this.btnPersonal.UseVisualStyleBackColor = false;
+            this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
             // 
             // btnMenu
             // 
@@ -150,6 +151,7 @@
             this.btnMenu.TabIndex = 7;
             this.btnMenu.Text = "Menu";
             this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnConfiguracion
             // 
@@ -242,7 +244,7 @@
             this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitulo.Location = new System.Drawing.Point(0, 0);
             this.panelTitulo.Name = "panelTitulo";
-            this.panelTitulo.Size = new System.Drawing.Size(962, 34);
+            this.panelTitulo.Size = new System.Drawing.Size(1024, 34);
             this.panelTitulo.TabIndex = 0;
             this.panelTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitulo_Paint);
             this.panelTitulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTitulo_MouseMove);
@@ -280,7 +282,7 @@
             this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(878, 5);
+            this.btnMinimizar.Location = new System.Drawing.Point(940, 5);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(23, 23);
             this.btnMinimizar.TabIndex = 3;
@@ -294,7 +296,7 @@
             this.btnMaximizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(907, 5);
+            this.btnMaximizar.Location = new System.Drawing.Point(969, 5);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(23, 23);
             this.btnMaximizar.TabIndex = 1;
@@ -308,7 +310,7 @@
             this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(936, 5);
+            this.btnCerrar.Location = new System.Drawing.Point(998, 5);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(23, 23);
             this.btnCerrar.TabIndex = 0;
@@ -322,7 +324,7 @@
             this.btnRestaurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(907, 5);
+            this.btnRestaurar.Location = new System.Drawing.Point(969, 5);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(23, 23);
             this.btnRestaurar.TabIndex = 2;
@@ -338,11 +340,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 549);
+            this.ClientSize = new System.Drawing.Size(1024, 549);
             this.ControlBox = false;
             this.Controls.Add(this.PanelContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimumSize = new System.Drawing.Size(900, 531);
+            this.MinimumSize = new System.Drawing.Size(1024, 549);
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
