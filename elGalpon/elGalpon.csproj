@@ -156,6 +156,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caja.Designer.cs">
+      <DependentUpon>Caja.cs</DependentUpon>
+    </Compile>
     <Compile Include="configuracion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,7 @@
     <Compile Include="Mesas.Designer.cs">
       <DependentUpon>Mesas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Metodos.cs" />
     <Compile Include="Pedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +201,15 @@
     <Compile Include="Reservas.Designer.cs">
       <DependentUpon>Reservas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Caja.resx">
+      <DependentUpon>Caja.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="configuracion.resx">
       <DependentUpon>configuracion.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +233,9 @@
     </Compile>
     <EmbeddedResource Include="Reservas.resx">
       <DependentUpon>Reservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

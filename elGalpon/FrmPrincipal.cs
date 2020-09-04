@@ -144,13 +144,22 @@ namespace elGalpon
         private void btnConfiguracion_Click(object sender, EventArgs e)
         {
             LogAdmin login = new LogAdmin();
-            login.Show();
+            login.ShowDialog();
         }
 
         private void btnPedidos_Click(object sender, EventArgs e)
         {
             AbrirFormulario<Pedidos>();
         }
+
+        private void btnCaja_Click(object sender, EventArgs e)
+        {
+            LogAdmin login = new LogAdmin();
+            login.ShowDialog();
+            
+
+        }
+        
 
         private void panelTitulo_Paint(object sender, PaintEventArgs e)
         {
@@ -159,7 +168,7 @@ namespace elGalpon
         public void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
             Form formulario;
-            formulario = 
+            formulario =
             formulario = panelFormularios.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario
                                                                                      //si el formulario/instancia no existe
             if (formulario == null)
@@ -179,5 +188,6 @@ namespace elGalpon
                 formulario.BringToFront();
             }
         }
+
     }
 }
