@@ -37,7 +37,7 @@
             this.btnRerservas = new System.Windows.Forms.Button();
             this.btnPersonal = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
-            this.btnConfiguracion = new System.Windows.Forms.Button();
+            this.btnGestionar = new System.Windows.Forms.Button();
             this.btnEgresos = new System.Windows.Forms.Button();
             this.btnPedidos = new System.Windows.Forms.Button();
             this.btnCaja = new System.Windows.Forms.Button();
@@ -98,7 +98,7 @@
             this.panelMenu.Controls.Add(this.btnRerservas);
             this.panelMenu.Controls.Add(this.btnPersonal);
             this.panelMenu.Controls.Add(this.btnMenu);
-            this.panelMenu.Controls.Add(this.btnConfiguracion);
+            this.panelMenu.Controls.Add(this.btnGestionar);
             this.panelMenu.Controls.Add(this.btnEgresos);
             this.panelMenu.Controls.Add(this.btnPedidos);
             this.panelMenu.Controls.Add(this.btnCaja);
@@ -153,19 +153,19 @@
             this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // btnConfiguracion
+            // btnGestionar
             // 
-            this.btnConfiguracion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
-            this.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfiguracion.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.btnConfiguracion.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnConfiguracion.Location = new System.Drawing.Point(0, 427);
-            this.btnConfiguracion.Name = "btnConfiguracion";
-            this.btnConfiguracion.Size = new System.Drawing.Size(200, 35);
-            this.btnConfiguracion.TabIndex = 4;
-            this.btnConfiguracion.Text = "Configuración";
-            this.btnConfiguracion.UseVisualStyleBackColor = false;
-            this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
+            this.btnGestionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(156)))), ((int)(((byte)(150)))));
+            this.btnGestionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGestionar.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
+            this.btnGestionar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnGestionar.Location = new System.Drawing.Point(0, 427);
+            this.btnGestionar.Name = "btnGestionar";
+            this.btnGestionar.Size = new System.Drawing.Size(200, 35);
+            this.btnGestionar.TabIndex = 4;
+            this.btnGestionar.Text = "Gestionar";
+            this.btnGestionar.UseVisualStyleBackColor = false;
+            this.btnGestionar.Click += new System.EventHandler(this.btnConfiguracion_Click);
             // 
             // btnEgresos
             // 
@@ -179,6 +179,7 @@
             this.btnEgresos.TabIndex = 5;
             this.btnEgresos.Text = "Egresos";
             this.btnEgresos.UseVisualStyleBackColor = false;
+            this.btnEgresos.Click += new System.EventHandler(this.btnEgresos_Click);
             // 
             // btnPedidos
             // 
@@ -231,6 +232,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 142);
             this.panel4.TabIndex = 0;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // panelTitulo
             // 
@@ -366,7 +368,7 @@
         private System.Windows.Forms.Panel panelTitulo;
         private System.Windows.Forms.Button btnMesas;
         private System.Windows.Forms.Panel panelFormularios;
-        private System.Windows.Forms.Button btnConfiguracion;
+        private System.Windows.Forms.Button btnGestionar;
         private System.Windows.Forms.Button btnEgresos;
         private System.Windows.Forms.Button btnPedidos;
         private System.Windows.Forms.Button btnCaja;

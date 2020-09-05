@@ -87,22 +87,28 @@ namespace elGalpon
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
             
-                lx = this.Location.X;
-                ly = this.Location.Y;
-                sw = this.Size.Width;
-                sh = this.Size.Height;
-                btnMaximizar.Visible = false;
-                btnRestaurar.Visible = true;
-                this.Size = Screen.PrimaryScreen.WorkingArea.Size;
-                this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+            lx = this.Location.X;
+            ly = this.Location.Y;
+            sw = this.Size.Width;
+            sh = this.Size.Height;
+            btnMaximizar.Visible = false;
+            btnRestaurar.Visible = true;
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+            MinimumSize = this.Size;
+            MaximumSize = this.Size;
             
         }
         private void btnRestaurar_Click(object sender, EventArgs e)
         {
             btnMaximizar.Visible = true;
             btnRestaurar.Visible = false;
+            MinimumSize = new Size(sw, sh);
             this.Size = new Size(sw, sh);
             this.Location = new Point(lx, ly);
+            
+            
+
         }
 
         
@@ -143,13 +149,14 @@ namespace elGalpon
         
         private void btnConfiguracion_Click(object sender, EventArgs e)
         {
-            LogAdmin login = new LogAdmin();
-            login.ShowDialog();
+            //LogAdmin login = new LogAdmin();
+            //login.ShowDialog();
+            AbrirFormulario<frmGestionar>();
         }
 
         private void btnPedidos_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<frmPedidos>();
+            AbrirFormulario<frmListadoPedidos>();
         }
 
         private void btnCaja_Click(object sender, EventArgs e)
@@ -168,6 +175,16 @@ namespace elGalpon
         private void btnPersonal_Click(object sender, EventArgs e)
         {
             AbrirFormulario<frmPersonal>();
+        }
+
+        private void btnEgresos_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<frmEgresos>();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void panelTitulo_Paint(object sender, PaintEventArgs e)
