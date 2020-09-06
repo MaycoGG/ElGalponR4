@@ -162,17 +162,35 @@
     <Compile Include="frmAbmComida.Designer.cs">
       <DependentUpon>frmAbmComida.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAbmEgresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbmEgresos.Designer.cs">
+      <DependentUpon>frmAbmEgresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbmMenu.Designer.cs">
+      <DependentUpon>frmAbmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbmPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbmPersonal.Designer.cs">
+      <DependentUpon>frmAbmPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbmReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbmReserva.Designer.cs">
+      <DependentUpon>frmAbmReserva.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCaja.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCaja.Designer.cs">
       <DependentUpon>frmCaja.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmConfiguracion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmConfiguracion.Designer.cs">
-      <DependentUpon>frmConfiguracion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEgresos.cs">
       <SubType>Form</SubType>
@@ -257,11 +275,20 @@
     <EmbeddedResource Include="frmAbmComida.resx">
       <DependentUpon>frmAbmComida.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAbmEgresos.resx">
+      <DependentUpon>frmAbmEgresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbmMenu.resx">
+      <DependentUpon>frmAbmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbmPersonal.resx">
+      <DependentUpon>frmAbmPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbmReserva.resx">
+      <DependentUpon>frmAbmReserva.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCaja.resx">
       <DependentUpon>frmCaja.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmConfiguracion.resx">
-      <DependentUpon>frmConfiguracion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEgresos.resx">
       <DependentUpon>frmEgresos.cs</DependentUpon>
