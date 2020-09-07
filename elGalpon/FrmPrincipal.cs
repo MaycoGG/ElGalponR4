@@ -161,10 +161,9 @@ namespace elGalpon
 
         private void btnCaja_Click(object sender, EventArgs e)
         {
-            //LogAdmin login = new LogAdmin();
-            //login.ShowDialog();
-            AbrirFormulario<frmCaja>();
-
+            LogAdmin login = new LogAdmin();
+            login.ShowDialog();
+            //AbrirFormulario<frmCaja>();
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -191,10 +190,8 @@ namespace elGalpon
         {
             
         }
-
         
-
-        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        public void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
             Form formulario;
             formulario =
