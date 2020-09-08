@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ElGalpon.Base\ElGalpon.Base.csproj" />
+    <ProjectReference Include="..\ElGalpon.Models\ElGalpon.Models.csproj" />
+    <ProjectReference Include="..\ElGalpon.Repository\ElGalpon.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

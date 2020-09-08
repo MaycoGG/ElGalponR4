@@ -18,8 +18,8 @@ elGalpon/bin/
 *.tli
 *.tlh
 *.tmp
-*.tmp_proj
-*_wpftmp.csproj
+#*.tmp_proj
+#*_wpftmp.csproj
 *.log
 *.vspscc
 *.vssscc
@@ -43,7 +43,7 @@ elGalpon/bin/
 *.v2
 *.resx
 *.config
-*.csproj
+#*.csproj
 *.p7s
 *.nupkg
 *.md
