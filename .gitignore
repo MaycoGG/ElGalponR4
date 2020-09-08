@@ -39,9 +39,9 @@ elGalpon/bin/
 *.txt
 *.suo
 *.exe
-*.resources
+#*.resources
 *.v2
-*.resx
+#*.resx
 *.config
 #*.csproj
 *.p7s
