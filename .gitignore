@@ -34,7 +34,7 @@ elGalpon/bin/
 *.props
 *.targets
 *.cache
-*.cs
+#*.cs
 *.CopyComplete
 *.txt
 *.suo
