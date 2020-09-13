@@ -26,14 +26,13 @@ namespace elGalpon
             ReservasBus reservasBus = new ReservasBus();
             var reservas = reservasBus.SelectAllReservas();
             dgvReservas.DataSource = reservas.Return;
+            
             //dgvReservas.Rows[0].Cells[0].Value = "Juan Perez";
             //dgvReservas.Rows[0].Cells[1].Value = "10/10/2020";
             //dgvReservas.Rows[0].Cells[2].Value = "20:00";
             //dgvReservas.Rows[0].Cells[3].Value = "4";
             //dgvReservas.Rows[0].Cells[4].Value = "Mesa 2";
             //dgvReservas.Rows[0].Cells[5].Value = "Frente al tv";
-
-
 
             //dgvReservas.Rows.Add("Juan Perez", "19/12/2018", "21:00", "5", "Mesa 3", "Tu vieja");
 
