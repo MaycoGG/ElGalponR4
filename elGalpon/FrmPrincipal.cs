@@ -149,8 +149,8 @@ namespace elGalpon
         
         private void btnConfiguracion_Click(object sender, EventArgs e)
         {
-            //LogAdmin login = new LogAdmin();
-            //login.ShowDialog();
+            LogAdmin login = new LogAdmin();
+            login.ShowDialog();
             AbrirFormulario<frmGestionar>();
         }
 

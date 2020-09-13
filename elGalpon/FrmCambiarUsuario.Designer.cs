@@ -1,6 +1,6 @@
 ﻿namespace elGalpon
 {
-    partial class LogAdmin
+    partial class FrmCambiarUsuario
     {
         /// <summary>
         /// Required designer variable.
@@ -30,11 +30,11 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnAceptarUser = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtUser = new System.Windows.Forms.TextBox();
-            this.txtPass = new System.Windows.Forms.TextBox();
+            this.txtNewUser = new System.Windows.Forms.TextBox();
+            this.txtNewPass = new System.Windows.Forms.TextBox();
             this.lblErrorMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -43,11 +43,11 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(52)))), ((int)(((byte)(53)))));
             this.label2.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 106);
+            this.label2.Location = new System.Drawing.Point(18, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 29);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Contraseña";
+            this.label2.Size = new System.Drawing.Size(158, 29);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Contraseña nueva";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -60,69 +60,69 @@
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(496, 45);
-            this.label3.TabIndex = 16;
+            this.label3.TabIndex = 23;
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnLogin
+            // btnAceptarUser
             // 
-            this.btnLogin.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.btnLogin.Location = new System.Drawing.Point(138, 151);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(100, 31);
-            this.btnLogin.TabIndex = 11;
-            this.btnLogin.Text = "Aceptar";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
+            this.btnAceptarUser.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
+            this.btnAceptarUser.Location = new System.Drawing.Point(144, 162);
+            this.btnAceptarUser.Name = "btnAceptarUser";
+            this.btnAceptarUser.Size = new System.Drawing.Size(100, 31);
+            this.btnAceptarUser.TabIndex = 18;
+            this.btnAceptarUser.Text = "Aceptar";
+            this.btnAceptarUser.UseVisualStyleBackColor = true;
+            this.btnAceptarUser.Click += new System.EventHandler(this.btnAceptarUser_Click);
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(52)))), ((int)(((byte)(53)))));
             this.label1.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(12, 61);
+            this.label1.Location = new System.Drawing.Point(18, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 29);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Usuario";
+            this.label1.Size = new System.Drawing.Size(158, 29);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Usuario nuevo";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(244, 151);
+            this.button1.Location = new System.Drawing.Point(250, 162);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 34);
-            this.button1.TabIndex = 14;
+            this.button1.Size = new System.Drawing.Size(98, 31);
+            this.button1.TabIndex = 21;
             this.button1.Text = "Cancelar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // txtUser
+            // txtNewUser
             // 
-            this.txtUser.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.txtUser.Location = new System.Drawing.Point(132, 61);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(333, 29);
-            this.txtUser.TabIndex = 12;
+            this.txtNewUser.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
+            this.txtNewUser.Location = new System.Drawing.Point(182, 72);
+            this.txtNewUser.Name = "txtNewUser";
+            this.txtNewUser.Size = new System.Drawing.Size(289, 29);
+            this.txtNewUser.TabIndex = 19;
             // 
-            // txtPass
+            // txtNewPass
             // 
-            this.txtPass.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.txtPass.Location = new System.Drawing.Point(132, 106);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(333, 29);
-            this.txtPass.TabIndex = 13;
-            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
+            this.txtNewPass.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
+            this.txtNewPass.Location = new System.Drawing.Point(182, 117);
+            this.txtNewPass.Name = "txtNewPass";
+            this.txtNewPass.Size = new System.Drawing.Size(289, 29);
+            this.txtNewPass.TabIndex = 20;
+            this.txtNewPass.TextChanged += new System.EventHandler(this.txtNewPass_TextChanged);
             // 
             // lblErrorMessage
             // 
             this.lblErrorMessage.AutoSize = true;
-            this.lblErrorMessage.Location = new System.Drawing.Point(154, 198);
+            this.lblErrorMessage.Location = new System.Drawing.Point(141, 200);
             this.lblErrorMessage.Name = "lblErrorMessage";
             this.lblErrorMessage.Size = new System.Drawing.Size(35, 13);
-            this.lblErrorMessage.TabIndex = 18;
+            this.lblErrorMessage.TabIndex = 25;
             this.lblErrorMessage.Text = "label1";
             // 
-            // LogAdmin
+            // FrmCambiarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,27 +130,28 @@
             this.Controls.Add(this.lblErrorMessage);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnAceptarUser);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtUser);
-            this.Controls.Add(this.txtPass);
-            this.Name = "LogAdmin";
-            this.Text = "LogAdmin";
-            this.Load += new System.EventHandler(this.LogAdmin_Load);
+            this.Controls.Add(this.txtNewUser);
+            this.Controls.Add(this.txtNewPass);
+            this.Name = "FrmCambiarUsuario";
+            this.Text = "FrmCambiarUsuario";
+            this.Load += new System.EventHandler(this.FrmCambiarUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtUser;
-        private System.Windows.Forms.TextBox txtPass;
-        private System.Windows.Forms.Label lblErrorMessage;
+
         public System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnAceptarUser;
         public System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtNewUser;
+        private System.Windows.Forms.TextBox txtNewPass;
+        private System.Windows.Forms.Label lblErrorMessage;
     }
 }

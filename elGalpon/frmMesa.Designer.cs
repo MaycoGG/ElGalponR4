@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtFactura = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbMozos = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -100,14 +100,15 @@
             this.label2.Text = "Mozo";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox2
+            // cmbMozos
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(138, 90);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(180, 32);
-            this.comboBox2.TabIndex = 103;
+            this.cmbMozos.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
+            this.cmbMozos.FormattingEnabled = true;
+            this.cmbMozos.Location = new System.Drawing.Point(138, 90);
+            this.cmbMozos.Name = "cmbMozos";
+            this.cmbMozos.Size = new System.Drawing.Size(180, 32);
+            this.cmbMozos.TabIndex = 103;
+            this.cmbMozos.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -401,7 +402,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cmbMozos);
             this.Controls.Add(this.txtFactura);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -418,7 +419,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtFactura;
         private System.Windows.Forms.Label label2;
-        internal System.Windows.Forms.ComboBox comboBox2;
+        internal System.Windows.Forms.ComboBox cmbMozos;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
