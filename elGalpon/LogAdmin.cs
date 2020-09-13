@@ -39,7 +39,7 @@ namespace elGalpon
                     {
                         //AbrirFormulario<frmCaja>();
                         //frmCaja frmCaja = new frmCaja();
-                        MessageBox.Show("Bienvenido " + response.Return.LoginName);
+                        //MessageBox.Show("Bienvenido " + response.Return.LoginName);
                         //frmCaja.Show();
                         //frmCaja.FormClosed += Logout;
                         this.Hide();
@@ -47,9 +47,6 @@ namespace elGalpon
                     else
                     {
                         msgError(response.GetFullErrorMessage);
-                        txtPass.Text = "Password";
-                        txtPass.UseSystemPasswordChar = false;
-                        txtPass.Focus();
                     }
                 }
                 else msgError("Ingresa contraseña.");
@@ -74,6 +71,11 @@ namespace elGalpon
         private void LogAdmin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtPass_TextChanged(object sender, EventArgs e)
+        {
+            txtPass.UseSystemPasswordChar = true;
         }
     }
 }

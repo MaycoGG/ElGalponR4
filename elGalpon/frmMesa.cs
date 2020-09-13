@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ElGalpon.Business;
 
 namespace elGalpon
 {
@@ -15,6 +16,13 @@ namespace elGalpon
         public frmMesa()
         {
             InitializeComponent();
+
+            PersonaBus mozos = new PersonaBus();
+            var lista = mozos.SelectAllMozos();
+            cmbMozos.Items.Clear();
+            cmbMozos.DataSource = lista.Return;
+            cmbMozos.ValueMember = "Id";
+            cmbMozos.DisplayMember = "Denominacion";
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -34,6 +42,11 @@ namespace elGalpon
         {
             frmAbmComida frm = new frmAbmComida();
             frm.ShowDialog();
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -192,6 +192,12 @@
     <Compile Include="frmCaja.Designer.cs">
       <DependentUpon>frmCaja.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCambiarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCambiarUsuario.Designer.cs">
+      <DependentUpon>FrmCambiarUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEgresos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -289,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCaja.resx">
       <DependentUpon>frmCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCambiarUsuario.resx">
+      <DependentUpon>FrmCambiarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEgresos.resx">
       <DependentUpon>frmEgresos.cs</DependentUpon>

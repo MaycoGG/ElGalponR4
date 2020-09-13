@@ -34,5 +34,27 @@ namespace ElGalpon.Business
 
             return response;
         }
+
+        public ResultModel<UserModel> ChangeUserPassword(string user, string pass)
+        {
+            var response = new ResultModel<UserModel>();
+            try
+            {
+                userRepository.ChangeUserPassword(user, pass);
+                //var result = userRepository.ChangeUserPassword(user, pass);
+                //if (result != null)
+                //    response.Return = result;
+                //else
+                //{
+                //    response.AddErrorMessage("El usuario o la contraseña son incorrectos.");
+                //}
+            }
+            catch (Exception ex)
+            {
+                response.AddErrorMessage(ex.ToString());
+            }
+
+            return response;
+        }
     }
 }

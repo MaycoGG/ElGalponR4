@@ -38,7 +38,7 @@
             this.colPromoción = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCosto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbRubros = new System.Windows.Forms.ComboBox();
             this.txtBuscarNom = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -152,15 +152,15 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // comboBox2
+            // cmbRubros
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(21, 89);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(180, 32);
-            this.comboBox2.TabIndex = 110;
-            this.comboBox2.Text = "Mozo";
+            this.cmbRubros.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold);
+            this.cmbRubros.FormattingEnabled = true;
+            this.cmbRubros.Location = new System.Drawing.Point(21, 89);
+            this.cmbRubros.Name = "cmbRubros";
+            this.cmbRubros.Size = new System.Drawing.Size(180, 32);
+            this.cmbRubros.TabIndex = 110;
+            this.cmbRubros.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // txtBuscarNom
             // 
@@ -247,7 +247,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtBuscarNom);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cmbRubros);
             this.Controls.Add(this.dgvReservas);
             this.Controls.Add(this.label1);
             this.Name = "frmMenu";
@@ -262,7 +262,7 @@
 
         private System.Windows.Forms.DataGridView dgvReservas;
         private System.Windows.Forms.Label label1;
-        internal System.Windows.Forms.ComboBox comboBox2;
+        internal System.Windows.Forms.ComboBox cmbRubros;
         private System.Windows.Forms.TextBox txtBuscarNom;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDescripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRubro;

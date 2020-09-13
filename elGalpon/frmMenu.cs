@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ElGalpon.Business;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,15 @@ namespace elGalpon
         public frmMenu()
         {
             InitializeComponent();
+
+            //Carga de rubro de menu
+            RubrosBus rubros = new RubrosBus();
+            var lista = rubros.SelectAllRubrosMenu();
+            cmbRubros.Items.Clear();
+            cmbRubros.DataSource = lista.Return;
+            cmbRubros.ValueMember = "Id";
+            cmbRubros.DisplayMember = "Descripcion";
+            
         }
 
         //Si no hay nada escrito en el txt vuelvo a poner el texto por defecto
@@ -43,6 +53,11 @@ namespace elGalpon
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

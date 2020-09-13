@@ -191,7 +191,7 @@
             this.btnPedidos.Name = "btnPedidos";
             this.btnPedidos.Size = new System.Drawing.Size(200, 35);
             this.btnPedidos.TabIndex = 4;
-            this.btnPedidos.Text = "Pedidos";
+            this.btnPedidos.Text = "Delivery";
             this.btnPedidos.UseVisualStyleBackColor = false;
             this.btnPedidos.Click += new System.EventHandler(this.btnPedidos_Click);
             // 
