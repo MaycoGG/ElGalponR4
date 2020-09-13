@@ -34,12 +34,6 @@
             this.panelTitulo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvReservas = new System.Windows.Forms.DataGridView();
-            this.clmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmHora = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmCantPersonas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmMesaNumero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmObservaciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnNueva = new System.Windows.Forms.Button();
             this.panelTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservas)).BeginInit();
@@ -74,6 +68,7 @@
             // 
             // dgvReservas
             // 
+            this.dgvReservas.AllowUserToOrderColumns = true;
             this.dgvReservas.AllowUserToResizeRows = false;
             this.dgvReservas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -93,13 +88,6 @@
             this.dgvReservas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvReservas.ColumnHeadersHeight = 30;
             this.dgvReservas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvReservas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clmNombre,
-            this.clmFecha,
-            this.clmHora,
-            this.clmCantPersonas,
-            this.clmMesaNumero,
-            this.clmObservaciones});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Subheading", 10.75F, System.Drawing.FontStyle.Bold);
@@ -113,7 +101,6 @@
             this.dgvReservas.Location = new System.Drawing.Point(57, 82);
             this.dgvReservas.MultiSelect = false;
             this.dgvReservas.Name = "dgvReservas";
-            this.dgvReservas.ReadOnly = true;
             this.dgvReservas.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -129,42 +116,7 @@
             this.dgvReservas.Size = new System.Drawing.Size(764, 321);
             this.dgvReservas.TabIndex = 82;
             this.dgvReservas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReservas_CellClick);
-            // 
-            // clmNombre
-            // 
-            this.clmNombre.HeaderText = "Nombre";
-            this.clmNombre.Name = "clmNombre";
-            this.clmNombre.ReadOnly = true;
-            // 
-            // clmFecha
-            // 
-            this.clmFecha.HeaderText = "Fecha";
-            this.clmFecha.Name = "clmFecha";
-            this.clmFecha.ReadOnly = true;
-            // 
-            // clmHora
-            // 
-            this.clmHora.HeaderText = "Hora";
-            this.clmHora.Name = "clmHora";
-            this.clmHora.ReadOnly = true;
-            // 
-            // clmCantPersonas
-            // 
-            this.clmCantPersonas.HeaderText = "Personas";
-            this.clmCantPersonas.Name = "clmCantPersonas";
-            this.clmCantPersonas.ReadOnly = true;
-            // 
-            // clmMesaNumero
-            // 
-            this.clmMesaNumero.HeaderText = "Mesa N°";
-            this.clmMesaNumero.Name = "clmMesaNumero";
-            this.clmMesaNumero.ReadOnly = true;
-            // 
-            // clmObservaciones
-            // 
-            this.clmObservaciones.HeaderText = "Observaciones";
-            this.clmObservaciones.Name = "clmObservaciones";
-            this.clmObservaciones.ReadOnly = true;
+            this.dgvReservas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReservas_CellContentClick);
             // 
             // btnNueva
             // 
@@ -204,11 +156,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvReservas;
         private System.Windows.Forms.Button btnNueva;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmNombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmFecha;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmHora;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmCantPersonas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmMesaNumero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmObservaciones;
     }
 }

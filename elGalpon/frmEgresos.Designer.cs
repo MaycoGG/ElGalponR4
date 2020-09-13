@@ -37,12 +37,6 @@
             this.cmbSocio = new System.Windows.Forms.ComboBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dgvEgresos = new System.Windows.Forms.DataGridView();
-            this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colImporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.dtpDesde = new System.Windows.Forms.DateTimePicker();
             this.dtpHasta = new System.Windows.Forms.DateTimePicker();
@@ -119,6 +113,8 @@
             // 
             // dgvEgresos
             // 
+            this.dgvEgresos.AllowUserToDeleteRows = false;
+            this.dgvEgresos.AllowUserToOrderColumns = true;
             this.dgvEgresos.AllowUserToResizeRows = false;
             this.dgvEgresos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -137,13 +133,6 @@
             this.dgvEgresos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvEgresos.ColumnHeadersHeight = 30;
             this.dgvEgresos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvEgresos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colFecha,
-            this.colDescripcion,
-            this.colTipo,
-            this.colSocio,
-            this.colEstado,
-            this.colImporte});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Subheading", 10.75F, System.Drawing.FontStyle.Bold);
@@ -172,46 +161,6 @@
             this.dgvEgresos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEgresos.Size = new System.Drawing.Size(774, 210);
             this.dgvEgresos.TabIndex = 111;
-            // 
-            // colFecha
-            // 
-            this.colFecha.FillWeight = 40F;
-            this.colFecha.HeaderText = "Fecha";
-            this.colFecha.Name = "colFecha";
-            this.colFecha.ReadOnly = true;
-            // 
-            // colDescripcion
-            // 
-            this.colDescripcion.FillWeight = 150F;
-            this.colDescripcion.HeaderText = "Descripción";
-            this.colDescripcion.Name = "colDescripcion";
-            this.colDescripcion.ReadOnly = true;
-            // 
-            // colTipo
-            // 
-            this.colTipo.FillWeight = 60F;
-            this.colTipo.HeaderText = "Tipo";
-            this.colTipo.Name = "colTipo";
-            this.colTipo.ReadOnly = true;
-            // 
-            // colSocio
-            // 
-            this.colSocio.HeaderText = "Socio";
-            this.colSocio.Name = "colSocio";
-            this.colSocio.ReadOnly = true;
-            // 
-            // colEstado
-            // 
-            this.colEstado.FillWeight = 60F;
-            this.colEstado.HeaderText = "Estado";
-            this.colEstado.Name = "colEstado";
-            this.colEstado.ReadOnly = true;
-            // 
-            // colImporte
-            // 
-            this.colImporte.HeaderText = "Importe";
-            this.colImporte.Name = "colImporte";
-            this.colImporte.ReadOnly = true;
             // 
             // btnAgregar
             // 
@@ -304,12 +253,6 @@
         internal System.Windows.Forms.ComboBox cmbSocio;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridView dgvEgresos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colFecha;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colDescripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTipo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colSocio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colEstado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colImporte;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.DateTimePicker dtpDesde;
         private System.Windows.Forms.DateTimePicker dtpHasta;
