@@ -24,5 +24,21 @@ namespace ElGalpon.Business
 
             return response;
         }
+
+        public ResultModel<List<ReservaModel>> SelectReservasByFecha(DateTime fecha)
+        {
+            var response = new ResultModel<List<ReservaModel>>();
+            try
+            {
+                response.Return = reservasRepository.SelectReservasByFecha(fecha);
+            }
+            catch (Exception ex)
+            {
+                //TODO - Agregar MENSAJE de error
+                response.AddErrorMessage(ex.ToString());
+            }
+
+            return response;
+        }
     }
 }

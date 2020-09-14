@@ -61,5 +61,18 @@ namespace elGalpon
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            //Carga de grilla con reservas
+            ReservasBus reservasBus = new ReservasBus();
+            var reservas = reservasBus.SelectReservasByFecha(DateTime.Parse(dtpFecha.Text));
+            dgvReservas.DataSource = reservas.Return;
+        }
     }
 }
