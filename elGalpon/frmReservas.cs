@@ -25,6 +25,7 @@ namespace elGalpon
             //Carga de grilla con reservas
             ReservasBus reservasBus = new ReservasBus();
             var reservas = reservasBus.SelectAllReservas();
+            //setGridParameters();
             dgvReservas.DataSource = reservas.Return;
             
             //dgvReservas.Rows[0].Cells[0].Value = "Juan Perez";
@@ -42,7 +43,6 @@ namespace elGalpon
             //btn.Name = "";
             //btn.UseColumnTextForButtonValue = true;
             //dgvReservas.ClearSelection();
-
         }
 
         private void dgvReservas_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -72,7 +72,60 @@ namespace elGalpon
             //Carga de grilla con reservas
             ReservasBus reservasBus = new ReservasBus();
             var reservas = reservasBus.SelectReservasByFecha(DateTime.Parse(dtpFecha.Text));
+            setGridParameters();
             dgvReservas.DataSource = reservas.Return;
+        }
+
+        public void setGridParameters()
+        {
+            dgvReservas.Columns[0].Name = "Id";
+            dgvReservas.Columns[0].HeaderText = "Id";
+            dgvReservas.Columns[0].DataPropertyName = "Id";
+            dgvReservas.Columns[0].Visible = false;
+
+            dgvReservas.Columns[1].HeaderText = "Fecha";
+            dgvReservas.Columns[1].Name = "Fecha";
+            dgvReservas.Columns[1].DataPropertyName = "Fecha";
+
+            dgvReservas.Columns[2].HeaderText = "Desde";
+            dgvReservas.Columns[2].Name = "HoraDesde";
+            dgvReservas.Columns[2].DataPropertyName = "HoraDesde";
+
+            dgvReservas.Columns[3].HeaderText = "Hasta";
+            dgvReservas.Columns[3].Name = "HoraHasta";
+            dgvReservas.Columns[3].DataPropertyName = "HoraHasta";
+
+            dgvReservas.Columns[4].HeaderText = "Mesa";
+            dgvReservas.Columns[4].Name = "IdMesa";
+            dgvReservas.Columns[4].DataPropertyName = "IdMesa";
+
+            dgvReservas.Columns[5].HeaderText = "Nombre";
+            dgvReservas.Columns[5].Name = "Nombre";
+            dgvReservas.Columns[5].DataPropertyName = "Nombre";
+            dgvReservas.Columns[5].Visible = false;
+
+            dgvReservas.Columns[6].HeaderText = "Apellido";
+            dgvReservas.Columns[6].Name = "Apellido";
+            dgvReservas.Columns[6].DataPropertyName = "Apellido";
+            dgvReservas.Columns[6].Visible = false;
+
+            dgvReservas.Columns[7].HeaderText = "Personas";
+            dgvReservas.Columns[7].Name = "CantidadPersonas";
+            dgvReservas.Columns[7].DataPropertyName = "CantidadPersonas";
+
+            dgvReservas.Columns[8].HeaderText = "Obs.";
+            dgvReservas.Columns[8].Name = "Observaciones";
+            dgvReservas.Columns[8].DataPropertyName = "Observaciones";
+
+            dgvReservas.Columns[9].HeaderText = "Estado";
+            dgvReservas.Columns[9].Name = "Estado";
+            dgvReservas.Columns[9].DataPropertyName = "Estado";
+
+            dgvReservas.Columns[10].HeaderText = "Denominacion";
+            dgvReservas.Columns[10].Name = "Denominacion";
+            dgvReservas.Columns[10].DataPropertyName = "Denominacion";
+            dgvReservas.Columns[10].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
         }
     }
 }
